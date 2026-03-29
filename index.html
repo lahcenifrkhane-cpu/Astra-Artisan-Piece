@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Showcase</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="background-glow"></div>
+
+  <main class="page-shell">
+    <header class="topbar">
+      <p class="brand">NOVA OBJECTS</p>
+      <button class="ghost-btn" type="button">Need Help?</button>
+    </header>
+
+    <section class="product-card">
+      <div class="product-gallery">
+        <div class="main-image-wrap">
+          <img id="mainImage" src="image8.png" alt="Product image" class="main-image" />
+          <button class="gallery-arrow gallery-arrow-left" id="prevImageBtn" type="button" aria-label="Previous image">&#10094;</button>
+          <button class="gallery-arrow gallery-arrow-right" id="nextImageBtn" type="button" aria-label="Next image">&#10095;</button>
+          <span class="badge">New Arrival</span>
+        </div>
+
+        <div class="thumb-row" role="list" aria-label="Product image options">
+          <button class="thumb" data-image="image4.png" aria-label="View image 1">
+            <img src="image4.png" alt="Thumbnail 1" />
+          </button>
+          <button class="thumb is-active" data-image="image8.png" aria-label="View image 2">
+            <img src="image8.png" alt="Thumbnail 2" />
+          </button>
+          <button class="thumb" data-image="coffee.png" aria-label="View image 3">
+            <img src="coffee.png" alt="Thumbnail 3" />
+          </button>
+          <button class="thumb" data-image="Light Gray.png" aria-label="View image 4">
+            <img src="Light Gray.png" alt="Thumbnail 4" />
+          </button>
+          <button class="thumb" data-image="Dark gray.png" aria-label="View image 5">
+            <img src="Dark gray.png" alt="Thumbnail 5" />
+          </button>
+          <button class="thumb" data-image="Deep Blue.png" aria-label="View image 6">
+            <img src="Deep Blue.png" alt="Thumbnail 6" />
+          </button>
+          <button class="thumb" data-image="Khaki color.png" aria-label="View image 7">
+            <img src="Khaki color.png" alt="Thumbnail 7" />
+          </button>
+        </div>
+      </div>
+
+      <div class="product-info">
+        <p class="eyebrow">Limited Edition</p>
+        <h1 class="title">Astra Artisan Piece</h1>
+        <p class="subtitle">
+          Hand-finished design object made with premium materials and crafted for modern spaces.
+        </p>
+
+        <div class="price-row">
+          <p class="price">$99.99</p>
+          <p class="shipping"><s>$129.00</s></p>
+          <p class="shipping">Free shipping worldwide</p>
+        </div>
+
+        <div class="options">
+          <label for="sizeSelect">Size</label>
+          <select id="sizeSelect" name="size">
+            <option>Small</option>
+            <option selected>Medium</option>
+            <option>Large</option>
+          </select>
+        </div>
+
+        <div class="cta-row">
+          <a class="primary-btn" href="https://www.paypal.com/ncp/payment/UGU43LN774858" target="_blank" rel="noopener noreferrer">Buy Now</a>
+        </div>
+
+        <p class="status" id="statusText" aria-live="polite"></p>
+
+        <ul class="feature-list">
+          <li>Designed to blend into minimalist and bold interiors</li>
+          <li>1-year quality guarantee</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
